@@ -1,0 +1,37 @@
+/*  Question no :- 14
+    name : Subhadeep Pathak
+    roll : 10800120176
+    batch : d3
+    date :- 03/05/2021
+*/
+#include<stdio.h>
+int main()
+{
+    int a, b, c;
+    printf("Enter three numbers");
+    scanf("%d%d%d",&a,&b,&c);
+
+    if(a>b && a>c)
+    {
+        if(b>c){
+            printf("2nd largest is %d",b);
+        }
+        else{
+            printf("2nd largest is %d",c);
+        }
+    }
+    else if(b>a && b>c)
+    {
+        if(a>c)
+        printf("2nd largest is %d",a);
+        else
+        printf("2nd largest is %d",c);
+    }
+    else if(c>a && c>b){
+        if(a>b)
+        printf("2nd largest is %d",a);
+        else
+        printf("2nd largest is %d",b);
+    }
+    return 0;
+}
